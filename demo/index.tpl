@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>天书使用手册</title>
+<title>天书</title>
 <style>
 body {
 font-family: Tahoma;
