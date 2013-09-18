@@ -1,0 +1,16 @@
+#! /usr/bin/env node
+
+var program = require('commander'),
+	tianshu = require('../lib/main'),
+	version = require('../package.json').version;
+	
+program
+	.version(version)
+	.usage('<pathname>')
+	.parse(process.argv);
+
+if (program.args.length === 0) {
+	program.help();
+} else {
+	tianshu(program.args[0]);
+}

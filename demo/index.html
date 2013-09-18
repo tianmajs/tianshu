@@ -1,0 +1,90 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>天书使用手册</title>
+<style>
+body {
+font-family: Tahoma;
+font-size: 10pt;
+line-height: 170%;
+padding: 0 10pt;
+}
+
+nav {
+background: gray;
+color: white;
+overflow-x: hidden;
+overflow-y: auto;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 200px;
+}
+
+header {
+padding-left: 200px;
+}
+
+article {
+padding-left: 200px;
+}
+
+footer {
+padding-left: 200px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>天书</h1>
+<p>想用<code>markdown</code>编写带索引的单页结构HTML文档的话，可以试试天书。</p>
+
+</header>
+<nav>
+<ul>
+<li class="level3"><a href="#0.1">安装</a></li><li class="level3"><a href="#0.2">使用</a></li><li class="level3"><a href="#0.3">开源协议</a></li></ul>
+
+</nav>
+<article>
+<h3 id="0.1">安装</h3>
+<blockquote>
+<p>   npm install tianshu -g</p>
+</blockquote>
+
+<h3 id="0.2">使用</h3>
+<p>首先参考<code>demo/</code>目录，使用<code>markdown</code>编写一些章节文件（位于<code>demo/section/</code>），并使用<code>HTML</code>编写好页面模板文件（位于<code>demo/index.tpl</code>）。在模板文件中，使用<code>x-markdown</code>标签引用<code>.md</code>文件，并使用<code>x-index</code>标签指定索引输出位置。</p>
+<p>准备好所有文件后，使用以下命令将模板文件编译为HTML文件。</p>
+<blockquote>
+<p>   tianshu index.tpl</p>
+</blockquote>
+<p>如果希望生成的<code>index.html</code>好看一些，可以在<code>index.tpl</code>里写一些CSS。</p>
+
+</article>
+<footer>
+<h3 id="0.3">开源协议</h3>
+<p>本程序基于MIT协议开源。</p>
+<pre><code>Copyright (c) 2010-2013 Alibaba.com, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</code></pre>
+
+</footer>
+</body>
+</html>

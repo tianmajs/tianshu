@@ -1,0 +1,23 @@
+{
+	"name": "tianshu",
+	"description": "Markdown fragments into a HTML with TOC",
+	"keywords": [
+		"markdown",
+		"documentation",
+		"tianshu"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nqdeng/tianshu.git"
+	},
+	"author": "Nanqiao Deng <nqdeng@gmail.com>",
+	"version": "0.9.0",
+	"dependencies": {
+		"commander": "1.0.x",
+	    "marked": "0.2.x"
+  	},
+	"main": "lib/main.js",
+	"bin" : {
+		"tianshu": "./bin/tianshu"
+	}
+}
